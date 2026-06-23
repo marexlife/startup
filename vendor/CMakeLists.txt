@@ -14,7 +14,14 @@ FetchContent_Declare(
     GIT_TAG v1.17.0
 )
 
+FetchContent_Declare(
+    CORETYPES
+    GIT_REPOSITORY https://github.com/marexlife/core-types.git
+    GIT_TAG v0.5
+)
+
 FetchContent_MakeAvailable(
     ABSEIL
     GTEST
+    CORETYPES
 )
